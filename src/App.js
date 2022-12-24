@@ -55,7 +55,7 @@ function App() {
 
   const getNftWallet = async () => {
     try {
-      const response = await axios.get('https://OGPASSCleo.cleonfts1.repl.co/nft-wallet', {
+      const response = await axios.get('https://CleoOGPass.cleonfts.repl.co/nft-wallet', {
         params: {
           address: defaultAccount
         }
@@ -75,7 +75,7 @@ function App() {
         const body = {
           id: id,
         };
-        const dcResponse = await axios.post("https://OGPASSCleo.cleonfts1.repl.co/", {
+        const dcResponse = await axios.post("https://CleoOGPass.cleonfts.repl.co/", {
           body: body,
           headers: { "Content-Type": "application/json" },
         });
@@ -95,7 +95,7 @@ function App() {
   }
 
   const getQuantity = async () => {
-    const response = await axios.get('https://OGPASSCleo.cleonfts1.repl.co/nft-wallet', {
+    const response = await axios.get('https://CleoOGPass.cleonfts.repl.co/nft-wallet', {
       params: {
         address: defaultAccount
       }
